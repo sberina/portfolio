@@ -2727,6 +2727,25 @@ input, select, textarea {
 				opacity: 1;
 			}
 
+		@media screen and (max-width: 736px) {
+
+			.filters {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				-moz-align-items: flex-start;
+				-webkit-align-items: flex-start;
+				-ms-align-items: flex-start;
+				align-items: flex-start;
+			}
+
+				.filters li {
+					margin: 0 0 1em 0;
+				}
+
+		}
+
 /* Project Page */
 
 	.tags {
@@ -3952,8 +3971,10 @@ input, select, textarea {
 
 			.articles-viewport {
 				overflow-x: visible;
+				overflow-y: visible;
 				scroll-snap-type: none;
 				touch-action: auto;
+				-webkit-overflow-scrolling: auto;
 			}
 
 			#articles .articles-tiles {
