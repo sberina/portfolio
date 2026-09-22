@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vienna Urban Clay - Sabrina Haas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title">Sabrina Haas</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#" id="about-link"><span class="nav-label">About <span class="join-symbol">+</span> Contact</span></a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header id="about">
+								<div id="about-panel" class="about-panel">
+									<div class="about-panel-row">
+										<div class="about-text">
+											<p>I&rsquo;m a Vienna-based designer and researcher. I work across visual communication, illustration and design research, asking how spaces, systems, and materials can work better for people and places. Alongside my design work, I occasionally write.</p>
+										</div>
+										<div class="about-contact">
+											<p><a href="mailto:hellosabrinahaas@gmail.com">hellosabrinahaas@gmail.com</a></p>
+										</div>
+									</div>
+								</div>
+							</header>
+
+							<ul class="tags">
+								<li><span class="filter-box"><span class="filter-x"></span></span><span class="filter-label">Design Research</span></li>
+							</ul>
+
+							<h1>Vienna Urban Clay</h1>
+
+							<div class="project-meta">
+								<div class="project-meta-left">
+									<div class="project-facts-list">
+										<p>Year: 2021</p>
+										<p>Project Partner: Michalina Zadykowicz</p>
+										<p>Science Partner: BOKU University Vienna</p>
+										<p>Print Support: VL Mag. Flora Zimmeter, Mag. art. Ute Huber-Leierer</p>
+									</div>
+									<p class="lead stroke-bottom">3rd prize at &Lstrok;&oacute;d&#378; Design Festival</p>
+								</div>
+								<div class="project-meta-right">
+									<p class="lead muted">What if I told you that this plate was made from dirt that used to be in place of the nearest subway station?</p>
+									<p>In this project we discuss the possibility of Vienna as a mine for geogenic resources. Our investigation into Vienna&rsquo;s clay deposits revealed that vast amounts of clay are excavated during construction works, especially those related to the new subway routes. Most of which find their destiny on disposal sites.</p>
+									<p>The map, partially printed with clay as a pigment, illustrates extensive clay deposits under Vienna and overlays them with planned construction work, in order to track the urban mining which is bound to happen in the upcoming years.</p>
+									<p>We tested the properties and suitability of these urban clays, resulting in a series of ceramic objects and glaze recipes.</p>
+								</div>
+							</div>
+
+							<span class="image fit"><img src="images/vuc-table-web.jpg" alt="" /></span>
+
+							<span class="image fit"><img src="images/vuc-map-frame-web.jpg" alt="" /></span>
+
+							<video class="video fit" src="images/UrbanClayAngewandte.mp4" controls preload="metadata"></video>
+
+							<video class="video fit" src="images/Urban_Clay2.mp4" controls preload="metadata"></video>
+
+							<div class="project-gallery row-2">
+								<span class="image"><img src="images/vuc-map-detail1-web.jpg" alt="" /></span>
+								<span class="image"><img src="images/vuc-map-detail2-web.jpg" alt="" /></span>
+							</div>
+
+							<div class="project-gallery row-2">
+								<span class="image"><img src="images/vuc-uvscreen-web.jpg" alt="" /></span>
+								<span class="image"><img src="images/vuc-screenprint-web.jpg" alt="" /></span>
+							</div>
+
+							<span class="image fit"><img src="images/vuc-ceramics-web.jpg" alt="" /></span>
+
+							<div class="project-gallery row-2">
+								<div class="gallery-text">
+									<p>We believe that a deeper research of the raw materials present in contemporary cities will lead to the development of improved systems for their management.</p>
+								</div>
+								<span class="image"><img src="images/vuc-jars-web.jpg" alt="" /></span>
+							</div>
+
+							<span class="image fit"><img src="images/vuc-exhibition-web.jpg" alt="" /></span>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Sabrina Haas 2026</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				$(function() {
+
+					var $link = $('#about-link'),
+						$panel = $('#about-panel'),
+						$join = $link.find('.join-symbol');
+
+					$link.on('click', function(event) {
+
+						event.preventDefault();
+
+						$panel.toggleClass('is-visible');
+
+						$join.html($panel.hasClass('is-visible') ? '&times;' : '+');
+
+					});
+
+				});
+			</script>
+
+	</body>
+</html>

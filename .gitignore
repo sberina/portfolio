@@ -1,0 +1,11 @@
+# Design source files (not needed for the live site)
+*.ai
+
+# Too large for GitHub (287MB, exceeds 100MB limit) - not embedded until hosted elsewhere
+images/Urban_Clay2.mp4
+
+# Unused large source photos not referenced by any page
+images/IMG_9717.png
+images/IMG_9724.png
+images/IMG_9726.png
+images/IMG_9768.png
