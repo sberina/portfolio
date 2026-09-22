@@ -3953,6 +3953,7 @@ input, select, textarea {
 			.articles-viewport {
 				overflow-x: visible;
 				scroll-snap-type: none;
+				touch-action: auto;
 			}
 
 			#articles .articles-tiles {
