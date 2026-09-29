@@ -3568,7 +3568,7 @@ input, select, textarea {
 
 			#about-panel.is-visible {
 				max-height: 30em;
-				margin-bottom: 4.3em;
+				margin-bottom: 4.5em;
 			}
 
 			.about-panel-row {
@@ -3580,10 +3580,11 @@ input, select, textarea {
 				-webkit-flex-wrap: wrap;
 				-ms-flex-wrap: wrap;
 				flex-wrap: wrap;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
-				align-items: center;
+				-moz-align-items: stretch;
+				-webkit-align-items: stretch;
+				-ms-align-items: stretch;
+				align-items: stretch;
+				gap: 5em;
 			}
 
 				.about-panel-row .about-text {
@@ -3591,25 +3592,52 @@ input, select, textarea {
 					-webkit-flex: 0 0 auto;
 					-ms-flex: 0 0 auto;
 					flex: 0 0 auto;
+					width: calc(30% - 1em);
 				}
 
 				.about-panel-row .about-contact {
-					-moz-flex: 1 1 auto;
-					-webkit-flex: 1 1 auto;
-					-ms-flex: 1 1 auto;
-					flex: 1 1 auto;
+					-moz-flex: 0 0 auto;
+					-webkit-flex: 0 0 auto;
+					-ms-flex: 0 0 auto;
+					flex: 0 0 auto;
 					display: -moz-flex;
 					display: -webkit-flex;
 					display: -ms-flex;
 					display: flex;
+					-moz-align-items: flex-start;
+					-webkit-align-items: flex-start;
+					-ms-align-items: flex-start;
+					align-items: flex-start;
 					-moz-justify-content: center;
 					-webkit-justify-content: center;
 					-ms-justify-content: center;
 					justify-content: center;
 				}
 
+				.about-panel-row .about-photo-col {
+					-moz-flex: 0 0 auto;
+					-webkit-flex: 0 0 auto;
+					-ms-flex: 0 0 auto;
+					flex: 0 0 auto;
+					position: relative;
+					top: 0.4em;
+					width: 14em;
+					overflow: hidden;
+					border-radius: 4px;
+				}
+
+					.about-photo-col img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						-o-object-fit: cover;
+						object-fit: cover;
+					}
+
 			.about-contact p {
 				display: inline-block;
+				position: relative;
+				top: 0.4em;
 				margin: 0;
 				padding: 0.75em 1.25em;
 				border: dashed 1px #161515;
@@ -3651,6 +3679,14 @@ input, select, textarea {
 				padding: 0.9em 2.25em;
 				font-size: 1em;
 			}
+
+			.about-panel-row .about-photo-col {
+				width: 100%;
+			}
+
+				.about-photo-col img {
+					height: auto;
+				}
 
 		}
 
