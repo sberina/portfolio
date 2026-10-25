@@ -3030,7 +3030,7 @@ input, select, textarea {
 			}
 
 			.project-gallery.row-2 video {
-				width: 100%;
+				display: block;
 				border-radius: 4px;
 			}
 
