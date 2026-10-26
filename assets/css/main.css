@@ -3029,11 +3029,6 @@ input, select, textarea {
 				border-radius: 4px;
 			}
 
-			.project-gallery.row-2 video {
-				display: block;
-				border-radius: 4px;
-			}
-
 			.project-gallery.row-2 .gallery-text {
 				display: -moz-flex;
 				display: -webkit-flex;
