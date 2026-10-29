@@ -3568,7 +3568,7 @@ input, select, textarea {
 		}
 
 			#about-panel.is-visible {
-				max-height: 30em;
+				max-height: 40em;
 				margin-bottom: 4.5em;
 			}
 
@@ -3577,26 +3577,14 @@ input, select, textarea {
 				display: -webkit-flex;
 				display: -ms-flex;
 				display: flex;
-				-moz-flex-wrap: wrap;
-				-webkit-flex-wrap: wrap;
-				-ms-flex-wrap: wrap;
-				flex-wrap: wrap;
 				-moz-align-items: stretch;
 				-webkit-align-items: stretch;
 				-ms-align-items: stretch;
 				align-items: stretch;
-				gap: 5em;
+				gap: 3em;
 			}
 
-				.about-panel-row .about-text {
-					-moz-flex: 0 0 auto;
-					-webkit-flex: 0 0 auto;
-					-ms-flex: 0 0 auto;
-					flex: 0 0 auto;
-					width: calc(30% - 1em);
-				}
-
-				.about-panel-row .about-contact {
+				.about-panel-row .about-photo-wrap {
 					-moz-flex: 0 0 auto;
 					-webkit-flex: 0 0 auto;
 					-ms-flex: 0 0 auto;
@@ -3605,42 +3593,71 @@ input, select, textarea {
 					display: -webkit-flex;
 					display: -ms-flex;
 					display: flex;
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
 					-moz-align-items: flex-start;
 					-webkit-align-items: flex-start;
 					-ms-align-items: flex-start;
 					align-items: flex-start;
-					-moz-justify-content: center;
-					-webkit-justify-content: center;
-					-ms-justify-content: center;
-					justify-content: center;
+					-moz-justify-content: space-between;
+					-webkit-justify-content: space-between;
+					-ms-justify-content: space-between;
+					justify-content: space-between;
+					gap: 1em;
+					width: 26em;
 				}
 
-				.about-panel-row .about-photo-col {
-					-moz-flex: 0 0 auto;
-					-webkit-flex: 0 0 auto;
-					-ms-flex: 0 0 auto;
-					flex: 0 0 auto;
-					position: relative;
-					top: 0.4em;
-					width: 14em;
-					overflow: hidden;
-					border-radius: 4px;
-				}
-
-					.about-photo-col img {
-						display: block;
+					.about-photo-wrap .about-photo-col {
+						position: relative;
+						top: 0.3em;
 						width: 100%;
-						height: 100%;
-						-o-object-fit: cover;
-						object-fit: cover;
 					}
 
-			.about-contact p {
+						.about-photo-col img {
+							display: block;
+							width: 100%;
+							height: auto;
+							border-radius: 4px;
+						}
+
+					.about-photo-wrap .about-contact {
+						position: relative;
+						top: 0.3em;
+						width: 100%;
+					}
+
+						.about-photo-wrap .about-contact p {
+							display: block;
+							width: 100%;
+						}
+
+					.about-photo-wrap .about-cv {
+						position: relative;
+						top: 0.3em;
+						width: 100%;
+					}
+
+						.about-photo-wrap .about-cv p {
+							display: block;
+							width: 100%;
+						}
+
+				.about-panel-row .about-text {
+					-moz-flex: 1 1 auto;
+					-webkit-flex: 1 1 auto;
+					-ms-flex: 1 1 auto;
+					flex: 1 1 auto;
+					min-width: 0;
+					max-width: 46em;
+				}
+
+			.about-contact p,
+			.about-cv p {
 				display: inline-block;
-				position: relative;
-				top: 0.4em;
 				margin: 0;
-				padding: 0.75em 1.25em;
+				padding: 0.2em 1.25em;
 				border: dashed 1px #161515;
 				border-radius: 4px;
 				color: #161515;
@@ -3653,7 +3670,8 @@ input, select, textarea {
 				word-break: break-word;
 			}
 
-				.about-contact a {
+				.about-contact a,
+				.about-cv a {
 					color: inherit;
 					border-bottom: 0;
 					text-decoration: none;
@@ -3671,7 +3689,15 @@ input, select, textarea {
 			}
 
 			.about-panel-row {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
 				gap: 1.5em;
+			}
+
+			.about-panel-row .about-photo-wrap {
+				width: 100%;
 			}
 
 			.about-panel-row .about-text {
@@ -3682,14 +3708,16 @@ input, select, textarea {
 				display: none;
 			}
 
-			.about-panel-row .about-contact {
+			.about-panel-row .about-contact,
+			.about-panel-row .about-cv {
 				display: block;
 				width: 100%;
 				max-width: 100%;
 				box-sizing: border-box;
 			}
 
-			.about-contact p {
+			.about-contact p,
+			.about-cv p {
 				display: block;
 				width: 100%;
 				max-width: 100%;
@@ -3699,20 +3727,12 @@ input, select, textarea {
 				top: 0;
 			}
 
-			.about-panel-row .about-photo-col {
-				width: 100%;
-				top: 0;
-			}
-
-				.about-photo-col img {
-					height: auto;
-				}
-
 		}
 
 		@media screen and (max-width: 480px) {
 
-			.about-contact p {
+			.about-contact p,
+			.about-cv p {
 				padding: 0.8em 1.75em;
 				font-size: 0.9em;
 			}
